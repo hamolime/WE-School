@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE School | Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="nav-bar">
+        <a href="index.html" class="logo">
+            <img src="images.jpg" alt="logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">register</a>
+            <a href="booking.html">Booking</a>
+        </nav>
+    </header>
+    <form method="POST" class="booking-form">
+
+        <!-- 1. Text Input -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+        <!-- 2. Email Input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+
+        <!-- 3. Age Input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+        <!-- 3. Phone Input -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your Phone" required>
+
+        <!-- 4. Date Input -->
+        <label for="booking-date">Preferred Date:</label>
+        <input type="date" id="booking-date" name="booking-date" required>
+
+        <!-- 5. Select Input -->
+        <label for="track">Select Academic Track:</label>
+        <select id="track" name="track" required>
+            <option value="" selected>Choose your track...</option>
+            <option value="web-dev">Web Development & Programming</option>
+            <option value="telecom">Telecommunications & Networking</option>
+        </select>
+
+        <!-- 6. Radio Input -->
+        <p>Attendance Type:</p>
+        <div class="radio-group">
+            <input type="radio" id="onsite" name="attendance" value="onsite" checked>
+            <label for="onsite">On-site</label>
+
+            <input type="radio" id="online" name="attendance" value="online">
+            <label for="online">Online</label>
+        </div>
+
+        <!-- 7. File Input -->
+        <label for="document">Upload ID or Certificate:</label>
+        <input type="file" id="document" name="document">
+
+        <!-- 8. Textarea Input -->
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Write any extra details here..."></textarea>
+
+        <!-- 9. Checkbox Input -->
+        <div class="checkbox-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and requirements</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Submit Booking</button>
+
+    </form>
+
+    <footer>
+        <p>
+            © 2026 WE Applied Technology School (WE ATS). All rights reserved.
+        </p>
+        <p>Location: Egypt</p>
+        <h2>Programmed By: Mohamed Zakaria</h2>
+    </footer>
+</body>
+
+</html>
